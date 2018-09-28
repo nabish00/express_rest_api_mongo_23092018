@@ -15,7 +15,12 @@ export default class Admin
                     var isPossibleNumber = mobileNumber.IsPossibleNumber(mobileNumber,countryCode);
                     var isValidNumber = mobileNumber.IsValidNumber(mobileNumber,countryCode);
                     var isValidNumberForRegion = mobileNumber.IsValidNumberForRegion(mobileNumber,countryCode);
-                    
+                    var getRegionCodeForNumber = mobileNumber.GetRegionCodeForNumber(mobileNumber,countryCode);
+                    var getNumberType = mobileNumber.GetNumberType(mobileNumber,CountryCode);
+                    var getE164Format = mobileNumber.GetE164Format(mobileNumber,CountryCode);
+                    var getOriginalFormat = mobileNumber.GetOriginalFormat(mobileNumber,CountryCode);
+                    var getNationalFormat = mobileNumber.GetNationalFormat(mobileNumber,CountryCode);
+                    var getInternationalFormat = mobileNumber.GetInternationalFormat(mobileNumber, CountryCode);
                     
                 }
 }
