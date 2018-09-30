@@ -1,65 +1,60 @@
-// Require `PhoneNumberFormat`.
-const PNF = require('google-libphonenumber').PhoneNumberFormat;
- 
-// Get an instance of `PhoneNumberUtil`.
-const phoneUtil = require('google-libphonenumber').PhoneNumberUtil.getInstance();
 
 
-export default class PhoneNumberUtils {
-
-    GetCountryCode(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return number.getCountryCode();
+export default class MobileNumber
+{
+    GetCountryCode(number, countryCd) {
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return mobNumber.getCountryCode();
     };
     
      GetNationalNumber(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return number.getNationalNumber();
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return mobNumber.getNationalNumber();
     
     }
     
      GetRawInput(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return number.getRawInput();
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return mobNumber.getRawInput();
     }
      IsPossibleNumber(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return phoneUtil.isPossibleNumber(number);
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return phoneUtil.isPossibleNumber(mobNumber);
     }
      IsValidNumber(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return phoneUtil.isValidNumber(number);
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return phoneUtil.isValidNumber(mobNumber);
     }
     IsValidNumberForRegion(number, countryCd) {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return phoneUtil.isValidNumberForRegion(number, countryCd)
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return phoneUtil.isValidNumberForRegion(mobNumber, countryCd)
     
     }
     GetRegionCodeForNumber(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return phoneUtil.getRegionCodeForNumber(number);
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return phoneUtil.getRegionCodeForNumber(mobNumber);
     }
      GetNumberType(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return phoneUtil.getNumberType(number)
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return phoneUtil.getNumberType(mobNumber)
     }
      GetE164Format(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        phoneUtil.format(number, PNF.E164);
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        phoneUtil.format(mobNumber, PNF.E164);
     }
      GetOriginalFormat(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return phoneUtil.formatInOriginalFormat(number, countryCd);
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return phoneUtil.formatInOriginalFormat(mobNumber, countryCd);
     }
     
      GetNationalFormat(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        return phoneUtil.format(number, PNF.NATIONAL);
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        return phoneUtil.format(numbemobNumberr, PNF.NATIONAL);
     }
     
      GetInternationalFormat(number, countryCd)  {
-        const number = phoneUtil.parseAndKeepRawInput(number, countryCd);
-        phoneUtil.format(number, PNF.INTERNATIONAL);
+        const mobNumber = phoneUtil.parseAndKeepRawInput(number, countryCd);
+        phoneUtil.format(mobNumber, PNF.INTERNATIONAL);
     }
 
 }

@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-let Addresses = mongoose.Schema({
+let AddressesSchema = mongoose.Schema({
     address1: {
         type: String,
         required : true
@@ -26,4 +26,4 @@ let Addresses = mongoose.Schema({
 
 });
 
-let Addresses = module.exports = mongoose.Model('Addresses', Addresses);
+let Addresses = module.exports = mongoose.Model('Addresses', AddressesSchema);
