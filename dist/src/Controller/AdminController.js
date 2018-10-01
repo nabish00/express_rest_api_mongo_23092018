@@ -10,6 +10,10 @@ var _MobileNumber = require('./MobileNumber');
 
 var _MobileNumber2 = _interopRequireDefault(_MobileNumber);
 
+var _Admin = require('../Models/Admin');
+
+var _Admin2 = _interopRequireDefault(_Admin);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
