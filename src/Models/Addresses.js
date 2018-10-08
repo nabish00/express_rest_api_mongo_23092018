@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
 
 let AddressesSchema = mongoose.Schema({
-    address1: {
+    Address1: {
         type: String,
         required : true
     },
-    address2: {
+    Address2: {
         type: String
     },
     Street : {

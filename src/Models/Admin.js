@@ -5,50 +5,50 @@ import Addresses from './Addresses';
 
 let AdminSchema = mongoose.Schema({
 
-    firstName : {
+    FirstName : {
         type: String,
         required : true,
         max: 255
 
     },
 
-    lastName : {
+    LastName : {
         type: String,
         required : true,
         max: 255
 
     },
-    username : {
+    Username : {
         type: String,
         required : true,
         max: 255
 
     },
-    email : {
+    Email : {
         type: String,
         required : true,
         max: 255
 
     },
-    password : {
+    Password : {
         type: String,
         required : true,
         max: 255
 
     },
-    createdAt : {
+    CreatedAt : {
         type: Date,
         required : true
 
     },
-    updatedAt : {
+    UpdatedAt : {
         type: Date,
     },
-    isEmailVerified : {
+    IsEmailVerified : {
         type: boolean,
         default: false
     },
-    accountStatus : {
+    AccountStatus : {
         type: boolean,
         default: false
     },

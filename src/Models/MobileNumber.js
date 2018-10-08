@@ -37,7 +37,7 @@ let MobileNumberSchema = mongoose.Schema({
     InternationalFormat : {
         type: String
     },
-    isMobileNumberVerified : {
+    IsMobileNumberVerified : {
         type: boolean,
         default: false
     }
