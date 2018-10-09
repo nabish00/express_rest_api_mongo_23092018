@@ -11,5 +11,6 @@ export default class Address {
             State: state,
             Country : country
         });
+        return newAddress;
     }
 }
